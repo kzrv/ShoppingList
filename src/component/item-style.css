@@ -1,0 +1,40 @@
+.item{
+    padding: 15px 20px;
+    border-bottom: 1px solid #3d5a80;
+    border-radius: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    min-height: 35px;
+}
+.item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 4px 4px;
+}
+.item:first-child{
+    border-radius: 4px 4px 0 0;
+
+}
+
+.item .item_content{
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    min-width: 550px;
+    color: #282c34;
+}
+.item .item_input{
+    border-radius: 4px;
+    border-style: groove;
+}
+.item .btn-outline-primary{
+    min-width: 140px;
+    color: #3d5a80;
+    border-color: #3d5a80;
+    border-style: groove;
+    border-width: 1px;
+}
+.item .btn-outline-primary:hover {
+    background-color: #3d5a80;
+    color: white;
+}

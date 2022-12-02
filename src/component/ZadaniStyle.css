@@ -1,0 +1,36 @@
+.polozka {
+    margin-top : 30px;
+    padding: 25px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
+    color: #fff;
+}
+.btn-light{
+    border-radius: 0 10px 10px 0;
+    min-width: 135px;
+}
+.form-control{
+    border-radius: 10px 0 0 10px;
+
+}
+.polozka .polozka_add{
+    display: flex;
+    justify-content: center;
+}
+.polozka .btn-outline-primary{
+    margin-top: 15px;
+    color: white;
+    border-color: white;
+}
+.polozka .btn-outline-primary:hover{
+    background-color: white;
+    color: #3d5a80;
+}
+.polozka .polozka_light{
+    background-color: white;
+    color: #3d5a80;
+    max-height: 40px;
+    margin-top: 15px;
+}
+
