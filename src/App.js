@@ -36,7 +36,7 @@ function App() {
         let item = await Calls.getShoppingItem(id);
         switch (typ){
             case "state" :
-                item = {...item,state: value==="completed"? "active": "completed"};
+                item = {...item,state: value==="ukoncene"? "aktivni": "ukoncene"};
                 await Calls.updateShoppingItem(id,item);
                 break;
             case "count" :
@@ -44,15 +44,15 @@ function App() {
                 await Calls.updateShoppingItem(id,item);
                 break;
         }
-        getAll();
+         getAll();
     }
     async function add(value){
         await Calls.createShoppingItem({
             "content": value,
-            "state": "active",
+            "state": "aktivni",
             "count": "0",
         });
-        getAll();
+         await getAll();
     }
 
   return (

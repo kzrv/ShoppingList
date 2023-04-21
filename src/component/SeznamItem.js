@@ -2,7 +2,7 @@ import "./item-style.css";
 export default function SeznamItem({item,onChangeState,onDelete}){
     const {content,count,state,id} = item;
     let btn = "UKONČIT";
-    if(state==="completed") btn = "ZKUSIT ZNOVU";
+    if(state==="ukoncene") btn = "ZKUSIT ZNOVU";
     function onChange(e){
         onChangeState(id,"count",e.target.value);
     }

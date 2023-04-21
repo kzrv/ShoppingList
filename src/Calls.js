@@ -24,7 +24,7 @@ let Calls = {
 
   getUri: function(useCase) {
     return (
-        "http://localhost:3004/" + useCase
+        "http://localhost:8080/" + useCase
     );
   },
 
